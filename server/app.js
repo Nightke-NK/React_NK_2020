@@ -8,10 +8,10 @@ app.use(body());
 app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
 const db = mysql.createConnection({
-    host: '35.187.231.68',
-    user: 'root',
-    password: 'cherarta',
-    database: 'DataNK'
+    host: ' ip ของ sql ',
+    user: ' userของ sql ',
+    password: ' password ของ sql ',
+    database: ' ชื่อ database ของ sql '
 });
 // show data
 app.get('/data', function(req,res){
