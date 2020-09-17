@@ -8,10 +8,10 @@ app.use(body());
 app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
 const db = mysql.createConnection({
-    host: '#########',
-    user: '####',
-    password: '###########',
-    database: '#####'
+    host: '35.187.231.68',
+    user: 'root',
+    password: 'cherarta',
+    database: 'DataNK'
 });
 // show data
 app.get('/data', function(req,res){
@@ -45,7 +45,6 @@ app.put('/data', function(req, res) {
 app.post('/data', function(req, res){
     console.log(req.body);
     let data = {
-        id:req.body.idkey,
         firstname:req.body.firstname,
         lastname:req.body.lastname
     };

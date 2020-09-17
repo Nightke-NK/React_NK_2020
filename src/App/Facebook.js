@@ -18,7 +18,7 @@ export default class Facebook extends Component {
 	localStorage.setItem('key', 0);
 	console.log("Hello");
 	window.location.reload(true);
-	window.location.href = ' ใส่ URLเว็บของตัวเอง  ';
+	window.location.href = 'https://chernk.iamnonny.work';
 	}
 
   responseFacebook = response => {
@@ -61,7 +61,7 @@ export default class Facebook extends Component {
     } else {
       fbContent = (
         <FacebookLogin
-          appId="ใส่Facebook ID ของตัวเอง"
+          appId="1777964422360792"
           autoLoad={Number(localStorage.getItem('key'))}
           fields="name,email,picture"
           onClick={this.componentClicked}
